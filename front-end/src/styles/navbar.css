@@ -1,0 +1,26 @@
+.c-nav {
+  padding: 1rem;
+  border-bottom: 1px solid #a0a0a0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-nav__link {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-nav__title {
+  font-weight: bold;
+  font-size: 15px;
+}
+/*# sourceMappingURL=navbar.css.map */

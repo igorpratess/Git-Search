@@ -1,0 +1,347 @@
+.c-userProfile {
+
+    &__error {
+        height: calc(100vh - 52px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__capa {
+        display: block;
+        width: 100%;
+        min-height: 160px;
+        object-fit: cover;
+    }
+
+    &__avatar {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__avatar img {
+        position: relative;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        max-width: 110px;
+        max-height: 110px;
+        border: 2px solid white;
+        top: -80px;
+    }
+
+    &__name {
+        margin-top: 2rem;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: #162668;
+    }
+
+    &__user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        color: #90A4AE;
+    }
+
+    &__login {
+        margin-left: 7px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    
+    &__cols {
+        width: 31%;
+        text-align: center;
+        color: #162668;
+        font-weight: bold;
+    }
+
+    &__icons {
+        object-fit: contain;
+    }
+
+    &__textInfos {
+        margin-left: 5px;
+    }
+
+    &__description {
+        margin-top: 5px;
+    }
+
+    &__btn {
+        margin-top: 2rem;
+        width: 50%;
+        padding: 1rem;
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        border: none;
+        background: #F7F9FA;
+        cursor: pointer;
+
+        &:first-child {
+            border-right: 1px solid rgb(239, 239, 239);
+        }
+        
+        &--active {
+            border-bottom: 3px solid #5C97D2;
+        }
+    }
+
+    &__bio {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    &__bioTitle {
+        font-weight: bold;
+        color: #162668;
+        margin-bottom: 1rem;
+    }
+
+    &--hideContent {
+        display: none;
+    }
+
+    &__projects {
+        padding-top: 2rem;
+    }
+
+    &__repos {
+        margin: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+    &__repoTitle {
+        color: #0366D6;
+        margin-bottom: 5px;
+    }
+
+    &__repoDesc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; 
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    &__repoInfos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__repoTags {
+        display: flex;
+        align-items: center;
+    }
+
+    &__repoBadge {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        margin-right: 5px;
+
+        &[data-color="0"] {
+            background-color: #B9BD00;
+        }
+
+        &[data-color="1"] {
+            background-color: #BD0000;
+        }
+
+        &[data-color="2"] {
+            background-color: #31BD00;
+        }
+
+        &[data-color="3"] {
+            background-color: #00B2BD;
+        }
+
+        &[data-color="4"] {
+            background-color: #FAFF0C;
+        }
+    }
+
+    &__repoLanguage, &__repoUpdate {
+        font-size: 13px;
+    }
+
+    &__footer {
+        padding: 2rem 0 3rem 0;
+    }
+
+    &__divBioFooter {
+        display: flex;
+        align-items: center;
+    }
+
+    &__textBioFooter {
+        margin-left: 10px;
+        color: #162668;
+        font-weight: bold;
+    }
+    &__nav--desk {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .c-userProfile {
+        
+        margin: 0;
+
+        &__error {
+            height: calc(100vh - 73px);
+            background: #f8fafb;
+            padding: 2rem 0 3rem 0;
+        }
+
+        &__errorSection {
+            background: white;
+            height: 100%;
+            width: 100%;
+            max-width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e7e7e7;
+        }
+
+        &__errorMsg {
+            font-size: 2rem;
+        }
+
+        &__nav--desk {
+            display: block;
+        }
+
+        &__nav--mobile {
+            display: none;
+        }
+
+        &__item {
+            background: #f8fafb;
+            padding: 2rem 0 3rem 0;
+            min-height: 92vh;
+        }
+
+        &__container {
+            background-color: white;
+            border: 1px solid #e7e7e7;
+            margin: auto;
+            max-width: 80%;
+        }
+
+        &__section {
+            margin: 0;
+            width: 100%;
+            min-height: calc(100vh - 160px);
+        }
+
+        &__avatar {
+            justify-content: unset;
+            margin-left: 5px;
+        }
+
+        &__texts {
+            display: flex;
+            align-items: baseline;
+            position: relative;
+            justify-content: space-between;
+            top: -70px;
+            left: 120px;
+            max-width: 80%;
+        }
+
+        &__name, &__description {
+            font-size: 12px;
+        }
+
+        &__user img {
+            width: 7px;
+            height: 7px;
+        }
+
+        &__login {
+            font-size: 10px;
+        }
+
+        &__cols {
+            margin: 5px;
+
+        }
+        
+        &__colsItems {
+            display: flex;
+            align-items: center;
+        }
+
+        &__textInfos {
+            font-size: 12px;
+        }
+
+        &__divInfo {
+            margin-top: -69px;
+            height: calc(100% - 260px);
+        }
+
+        &__information {
+            display: flex;
+            position: relative;
+            height: 100%;
+        }
+
+        &__buttons {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+        }
+
+        &__bio, &__projects {
+            width: 80%;
+            border-left: 1px solid #e7e7e7;
+            padding: 2rem 1rem 1rem 3rem;
+        }
+
+        &__btn {
+            width: 100%;
+            margin-top: 0;
+            padding: 8px;
+            font-size: 13px;
+        }
+
+        &__btn--active {
+            border-bottom: none;
+            border-right: 2px solid #5C97D2!important;
+        }
+
+        &__btn:first-child {
+            border-right: none;
+            border-bottom: 1px solid #e7e7e7;
+        }
+
+        .c-nav {
+            border-color: #e7e7e7;
+        }
+
+        .c-nav__logo {
+            width: 40px;
+            height: 40px;
+            margin-left: 5rem;
+        }
+
+    }
+}

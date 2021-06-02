@@ -1,0 +1,130 @@
+.c-allUsers {
+  margin: 15px;
+}
+
+.c-allUsers__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.c-allUsers__inputIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c-allUsers__icon {
+  padding: 8px;
+  text-align: center;
+  border: 2px solid #e2e2e2;
+  background-color: white;
+  border-right: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.c-allUsers__input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 2px solid #e2e2e2;
+  border-left: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.c-allUsers__nav--desk, .c-allUsers__textDesk {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .c-allUsers {
+    margin: 0;
+  }
+  .c-allUsers__nav--desk, .c-allUsers__textDesk {
+    display: block;
+  }
+  .c-allUsers__nav--mobile {
+    display: none;
+  }
+  .c-allUsers__input {
+    width: 40%;
+  }
+  .c-allUsers__textDesk {
+    width: 50%;
+  }
+  .c-allUsers__inputIcon {
+    display: contents;
+  }
+  .c-allUsers__icon {
+    margin-left: 10px;
+  }
+  .c-allUsers__item {
+    background: #f8fafb;
+    padding: 2rem 0 3rem 0;
+  }
+  .c-allUsers__container {
+    background-color: white;
+    border: 1px solid #e7e7e7;
+    padding: 2rem;
+    margin: auto;
+    max-width: 80%;
+    min-height: 900px;
+  }
+  .c-allUsers__section {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+  .c-allUsers__card {
+    background: white;
+  }
+  .c-allUsers .c-nav {
+    border-color: #e7e7e7;
+  }
+  .c-allUsers .c-nav__logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 5rem;
+  }
+  .c-allUsers .c-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .c-allUsers .c-card__section {
+    width: 20%;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 0;
+  }
+  .c-allUsers .c-card__section:last-child {
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .c-allUsers .c-card__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 15rem;
+  }
+  .c-allUsers .c-card__img {
+    margin-right: 0;
+    padding: 1px;
+  }
+}
+/*# sourceMappingURL=allUsers.css.map */

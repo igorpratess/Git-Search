@@ -1,0 +1,56 @@
+.c-loading {
+	
+    text-align: center;
+
+    &__item {
+        opacity: 0;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity .3s ease-in;
+    }
+
+    &--show {
+        opacity: 1;
+    }
+    
+    &__ball {
+        background-color: #777;
+        border-radius: 50%;
+        margin: 5px;
+        height: 10px;
+        width: 10px;
+        animation: jump .5s ease-in infinite;
+        
+        &:nth-of-type(2) {
+            animation-delay: 0.1s;
+        }
+        
+        &:nth-of-type(3) {
+            animation-delay: 0.2s;
+        }
+    }
+
+    &__msg {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+}
+
+.hideEls, .hideMsg {
+    display: none;
+}
+
+
+@keyframes jump {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	
+	50% {
+		transform: translateY(-10px);
+	}
+}

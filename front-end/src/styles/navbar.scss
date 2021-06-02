@@ -1,0 +1,17 @@
+.c-nav {
+    padding: 1rem;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    display: flex;
+    align-items: center;
+
+    &__link {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
