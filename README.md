@@ -1,4 +1,4 @@
-## Iniciar o projeto
+## Getting started
 ```
 npm install
 npm run serve
