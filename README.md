@@ -1,6 +1,5 @@
-## Iniciar o projeto
+## Getting started
 ```
-cd front-end/
 npm install
 npm run serve
 ```
