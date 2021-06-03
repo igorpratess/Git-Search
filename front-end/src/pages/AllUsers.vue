@@ -8,10 +8,13 @@
           <h3 class="c-allUsers__textDesk">Search Result</h3>
           <div class="c-allUsers__inputIcon">
             <img class="c-allUsers__icon" :src='icon' width="45"/>
-            <input class="c-allUsers__input" type="text" placeholder="Buscar" v-on:input='search'/>
+            <input class="c-allUsers__input" type="text" placeholder="Buscar" v-on:input='search' v-on:change="noResults"/>
           </div>
         </div>
         <div class="c-allUsers__card">
+          <div v-if="notFound">
+            <h3>Nenhum usuário encontrado</h3>
+          </div>
           <Card v-if="users" :users="users" />
           <!-- <Loading/> -->
         </div>
@@ -29,7 +32,7 @@ import Nav from "@/components/Nav.vue";
 export default {
   components: {
     Card,
-    Nav
+    Nav,
     // Loading
   },
   data() {
@@ -37,7 +40,8 @@ export default {
       users: [],
       image: require("@/assets/Icon.png"),
       icon: require("@/assets/Vector.png"),
-      iconDesk: require("@/assets/logo-github.png")
+      iconDesk: require("@/assets/logo-github.png"),
+      notFound: false
     };
   },
   mounted() {
@@ -56,6 +60,20 @@ export default {
           card.classList.add('c-card__section--hide');
         }
       });
+
+      this.noResults();
+
+    },
+    noResults: function() {
+     
+      const cards = document.querySelectorAll('.c-card__section');
+      const hideCards = document.querySelectorAll('.c-card__section--hide');
+      
+      if(hideCards.length === cards.length) {
+        this.notFound = true;
+      } else {
+        this.notFound = false;
+      }
 
     }
   }
