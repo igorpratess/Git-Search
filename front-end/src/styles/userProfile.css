@@ -27,6 +27,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .c-userProfile__avatar img {
@@ -285,6 +286,7 @@
         -ms-flex-pack: unset;
             justify-content: unset;
     margin-left: 5px;
+    width: unset;
   }
   .c-userProfile__texts {
     display: -webkit-box;

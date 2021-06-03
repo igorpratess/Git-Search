@@ -18,7 +18,7 @@
         position: absolute;
         display: flex;
         justify-content: center;
-
+        width: 100%;
     }
 
     &__avatar img {
@@ -253,6 +253,7 @@
         &__avatar {
             justify-content: unset;
             margin-left: 5px;
+            width: unset;
         }
 
         &__texts {
