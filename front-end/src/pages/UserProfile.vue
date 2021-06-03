@@ -80,9 +80,9 @@
                     <span class="c-userProfile__repoUpdate" >Atualizado em {{ convertDate(repo.updated_at) }}</span>
                   </div>
                 </div>
-                <div class="c-userProfile__footer">
+                <!-- <div class="c-userProfile__footer">
                   <Loading/>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -94,12 +94,12 @@
 <script>
 import api from "@/services/api.js";
 import Nav from "@/components/Nav.vue";
-import Loading from "@/components/Loading.vue";
+// import Loading from "@/components/Loading.vue";
 
 export default {
   components: {
-    Nav,
-    Loading
+    Nav
+    // Loading
   },
   data() {
     return {

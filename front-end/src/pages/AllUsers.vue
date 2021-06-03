@@ -13,7 +13,7 @@
         </div>
         <div class="c-allUsers__card">
           <Card v-if="users" :users="users" />
-          <Loading/>
+          <!-- <Loading/> -->
         </div>
       </div>
     </div>
@@ -24,13 +24,13 @@
 import api from "@/services/api.js";
 import Card from "@/components/Card.vue";
 import Nav from "@/components/Nav.vue";
-import Loading from "@/components/Loading.vue";
+// import Loading from "@/components/Loading.vue";
 
 export default {
   components: {
     Card,
-    Nav,
-    Loading
+    Nav
+    // Loading
   },
   data() {
     return {
