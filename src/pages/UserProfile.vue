@@ -95,7 +95,6 @@
 import api from "@/services/api.js";
 import Nav from "@/components/Nav.vue";
 // import Loading from "@/components/Loading.vue";
-
 export default {
   components: {
     Nav
@@ -135,7 +134,6 @@ export default {
       btn.classList.add("c-userProfile__btn--active");
       const bio = document.querySelector(".c-userProfile__bio");
       const projects = document.querySelector(".c-userProfile__projects");
-
       if (btn.innerText == "Sobre") {
         bio.classList.remove("c-userProfile--hideContent");
         projects.classList.add("c-userProfile--hideContent");
@@ -148,7 +146,6 @@ export default {
       if(!date) return;
       const getOnlyDate = date.substr(date[0], date.indexOf("T") - 2);
       const splitDate = getOnlyDate.split("-");
-
       return splitDate[2] + "/" + splitDate[1] + "/" + splitDate[0];
     },
     insertDataColor: function () {
@@ -163,7 +160,6 @@ export default {
           c = [];
         }
       }
-
       if(c.length) a.push(c);
       
       for (let i = 0; i < a.length; i++) {
@@ -171,7 +167,6 @@ export default {
           a[i][j].setAttribute('data-color', j);
         }
       }
-
     }
   },
   mounted() {
@@ -187,11 +182,9 @@ export default {
     
     this.profile = api(`/users/${user}`);
     this.repos = api(`/users/${user}/repos`);
-
     setTimeout(() => {
       this.insertDataColor();
     }, 2000);
-
   }
 };
 </script>

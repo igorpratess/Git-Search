@@ -1,7 +1,7 @@
 .c-card {
     
     &__section {
-        border-bottom: 1px solid rgb(160, 160, 160);
+        border-bottom: 1px solid #e2e2e2;
         margin-bottom: 20px;
 
         &--hide {
@@ -23,7 +23,7 @@
     &__img {
         border-radius: 50%;
         margin-right: 20px;
-        border: 1px solid rgb(160, 160, 160);
+        border: 1px solid #e2e2e2;
         padding: 3px;
     }
 

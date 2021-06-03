@@ -12,8 +12,8 @@
           </div>
         </div>
         <div class="c-allUsers__card">
-          <div v-if="notFound">
-            <h3>Nenhum usuário encontrado</h3>
+          <div class="c-allUsers__notFound" v-if="notFound">
+            <h3>Nenhum usuário encontrado.</h3>
           </div>
           <Card v-if="users" :users="users" />
           <!-- <Loading/> -->
